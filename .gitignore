@@ -1,39 +1,41 @@
-# History files
+# exclude everything from my BACKUP folder, including iteself#
+################
+BACKUP/*
+
+# R data files #
+################
+# Note that *.Rda files are used in R packages
+
+*.[rR][dD][aA][tT][aA]
+*.[rR][dD][sS]
+
+# RStudio files #
+################
+
+.Rproj.user
 .Rhistory
-.Rapp.history
-
-# Session Data files
 .RData
-
-# User-specific files
 .Ruserdata
+*.Rapp.history
 
-# Example code in package build process
-*-Ex.R
+# Temporary system files #
+################
+.DS_Store
+~$*.xls*
+*.tmp
 
-# Output files from R CMD build
-/*.tar.gz
+# Common text files that may contain data #
+###########################################
 
-# Output files from R CMD check
-/*.Rcheck/
+*.[cC][sS][vV]
+*.[tT][xX][tT]
 
-# RStudio files
-.Rproj.user/
+# Excel files (including macros and templates) #
+################################################
 
-# produced vignettes
-vignettes/*.html
-vignettes/*.pdf
+*.[xX][lL][sS][xXmMtT]?
 
-# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
-.httr-oauth
+# SPSS formats #
+################
 
-# knitr and R markdown default cache directories
-*_cache/
-/cache/
-
-# Temporary files created by R markdown
-*.utf8.md
-*.knit.md
-
-# R Environment Variables
-.Renviron
+*.[sS][aA][vV]
